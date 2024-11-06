@@ -1,0 +1,31 @@
+# maximize a window
+shift + lalt - f : yabai -m window --toggle native-fullscreen
+# balance out tree of windows (resize to occupy same area) 
+shift + lalt - e : yabai -m space --balance 
+# Open new terminal 
+lalt - return : pgrep -f "iTerm" \
+ && osascript -e 'tell application "iTerm2" to create window with default profile' \ || open -na "/Applications/iTerm.app" 
+# move window to space
+shift + cmd - 0x12 : yabai -m window --space 1 
+shift + cmd - 0x13 : yabai -m window --space 2 
+shift + cmd - 0x14 : yabai -m window --space 3 
+shift + cmd - 0x15 : yabai -m window --space 4 
+shift + cmd - 0x17 : yabai -m window --space 5
+shift + cmd - 0x16 : yabai -m window --space 6 
+shift + cmd - 0x1A : yabai -m window --space 7 
+shift + cmd - 0x1C : yabai -m window --space 8 
+shift + cmd - 0x19 : yabai -m window --space 9 
+shift + cmd - 0x1D : yabai -m window --space 10
+# swap windows 
+shift + lalt - s : yabai -m window --swap south 
+shift + lalt - z : yabai -m window --swap north 
+shift + lalt - q : yabai -m window --warp west
+shift + lalt - d : yabai -m window --warp east 
+# change window focus within space 
+lalt - s : yabai -m window --focus south 
+lalt - z : yabai -m window --focus north 
+lalt - q : yabai -m window --focus west 
+lalt - d : yabai -m window --focus east 
+# Apply tyling 
+lalt - t : yabai -m space --layout bsp 
+lalt + shift -t : yabai -m space --layout float

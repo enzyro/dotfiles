@@ -1,0 +1,19 @@
+# Window assignment 
+yabai -m rule --add app="^Code$" space=1
+yabai -m rule --add app="^IntelliJ IDEA$" space=1
+yabai -m rule --add app="^Winamax$" manage=off space=1
+yabai -m rule --add app="^Pokerstars$" manage=off space=4
+yabai -m rule --add app="^Finder$" space=2
+yabai -m rule --add app="^Firefox$" space=3 
+yabai -m rule --add app="^Google Chrome$" space=3 
+yabai -m rule --add app="^Slack$" space=4 
+yabai -m rule --add app="^Discord$" space=5 
+yabai -m rule --add app="^System Settings$" manage=off space=6 
+# General config 
+yabai -m config layout bsp 
+yabai -m config \ 
+top_padding 10 \ 
+left_padding 10 \ 
+right_padding 10 \ 
+bottom_padding 10 \ 
+window_gap 10
